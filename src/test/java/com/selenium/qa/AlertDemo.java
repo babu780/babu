@@ -15,10 +15,13 @@ public class AlertDemo {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.hyrtutorials.com/p/alertsdemo.html");
+        Thread.sleep(10000);
         driver.manage().window().maximize();
+        Thread.sleep(10000);
         driver.findElement(By.id("alertBox")).click();
         Thread.sleep(10000);
-        System.out.println("alerTest");cd
+        System.out.println("alerTest");
+        driver.close();
 
 
 
